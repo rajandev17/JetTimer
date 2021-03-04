@@ -13,14 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge
 
 import androidx.compose.ui.graphics.Color
-import com.example.androiddevchallenge.color
 
-val purple200 = Color(0xFF3366EE)
-val purple500 = Color(0xFF3377FF)
-val purple700 = Color(0xFF5588FF)
-val teal200 = Color(0xFF03DAC5)
-
-val progressGradient = listOf(teal200, "#FF56bee0".color, purple500)
+val String.color
+    get() = Color(android.graphics.Color.parseColor(this))
